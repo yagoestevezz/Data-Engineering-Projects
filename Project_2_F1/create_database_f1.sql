@@ -1,3 +1,4 @@
+
 create database project2_f1;
 use project2_f1;
 
@@ -24,7 +25,7 @@ circuit_id varchar(20) primary key,
 location varchar(25),
 country varchar(15),
 latitude decimal(10,7),
-longitude decimal(10,7),
+longitude decimal(10,7), 
 altitude int
 );
 
@@ -50,14 +51,64 @@ q3 int,
 	CONSTRAINT fk_qualy_constructor
         FOREIGN KEY (constructor_id)
         REFERENCES dim_constructor(constructor_id),
-
+        
 	CONSTRAINT fk_qualy_circuit
         FOREIGN KEY (circuit_id)
         REFERENCES dim_circuit(circuit_id),
-
+        
 	CONSTRAINT fk_qualy_race
         FOREIGN KEY (race_id)
         REFERENCES dim_race(race_id)
 );
 
+create table fact_pit(
+pit_id int auto_increment primary key,
+race_id varchar(10),
+driver_id varchar(20),
+constructor_id  varchar(25),
+circuit_id varchar(20),
+stop_number int,
+lap_number int,
+pit_time int,
+	CONSTRAINT fk_pit_driver
+        FOREIGN KEY (driver_id)
+        REFERENCES dim_driver(driver_id),
+
+	CONSTRAINT fk_pit_constructor
+        FOREIGN KEY (constructor_id)
+        REFERENCES dim_constructor(constructor_id),
+        
+	CONSTRAINT fk_pit_circuit
+        FOREIGN KEY (circuit_id)
+        REFERENCES dim_circuit(circuit_id),
+        
+	CONSTRAINT fk_pit_race
+        FOREIGN KEY (race_id)
+        REFERENCES dim_race(race_id)
+);
+create table fact_results(
+result_id int auto_increment primary key,
+race_id varchar(10),
+driver_id varchar(20),
+constructor_id  varchar(25),
+circuit_id varchar(20),
+start_pos int,
+finish_pos int,
+points int,
+	CONSTRAINT fk_results_driver
+	FOREIGN KEY (driver_id)
+	REFERENCES dim_driver(driver_id),
+
+	CONSTRAINT fk_results_constructor
+        FOREIGN KEY (constructor_id)
+        REFERENCES dim_constructor(constructor_id),
+        
+	CONSTRAINT fk_results_circuit
+        FOREIGN KEY (circuit_id)
+        REFERENCES dim_circuit(circuit_id),
+        
+	CONSTRAINT fk_results_race
+        FOREIGN KEY (race_id)
+        REFERENCES dim_race(race_id)
+);
 -- drop database project2_f1;

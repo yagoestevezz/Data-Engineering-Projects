@@ -28,7 +28,7 @@ Follow this steps in order to run the project on your local enviroment.
     * Open MySQL Workbench and connect to your db local server.
     * Execute the "create_database_f1.sql " file to create all the schemas and dimensions needed.
      
-3.  ** Python jupyter notebook:**
+3.  **Python jupyter notebook:**
     * Open the "pipeline.ipynb" file. 
       
 ### Run the code:

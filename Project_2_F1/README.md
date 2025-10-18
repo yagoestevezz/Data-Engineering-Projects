@@ -1,5 +1,5 @@
 # Lab practice 2 : F1 data analisys
-#Group 6:
+## Group 6:
 * Yago Estévez Figueiras
 * Andrea Real Blanco
 * Francisco Manuel Vázquez Fernández

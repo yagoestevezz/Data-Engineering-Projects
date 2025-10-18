@@ -1,4 +1,8 @@
 # Lab practice 2 : F1 data analisys
+#Group 6:
+* Yago Estévez Figueiras
+* Andrea Real Blanco
+* Francisco Manuel Vázquez Fernández
 
 This project had been developed for the "Data engieneering" course from the "Master en Intelixencia Artificial" USC, UDC, UVigo, 2025-2026.
 The main goal is to make a dimensional modelling and the full ETL process  and visualization of the data from a F1 database available at 
@@ -11,10 +15,10 @@ Follow this steps in order to run the project on your local enviroment.
 
 ### Software requirements:
 
-* **DBMS **: MySQL Server and MySQL workbench.
-* **ETL and pipeline**: Python 3.x ( A jupyter notebook ".ipynb" is provided with the main script and functions).
-*  The following libraries  must be installed prior to running the pipeline: (numpy, matplolib, pandas and mysqlalchemy).
-* **Visualization **: Tableau Desktop or Tableau Public.
+* DBMS: MySQL Server and MySQL workbench.
+* ETL and pipeline: Python 3.x ( A jupyter notebook ".ipynb" is provided with the main script and functions).
+* The following libraries  must be installed prior to running the pipeline: (numpy, matplolib, pandas and mysqlalchemy).
+* Visualization : Tableau Desktop or Tableau Public.
 
 ### Setup:
 

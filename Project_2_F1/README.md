@@ -33,3 +33,10 @@ Follow this steps in order to run the project on your local enviroment.
       
 ### Run the code:
 Once you have finisshed the setup you will be able to run the pipeline and populate the databse.
+
+##Tableau:
+We also developed 5 dashboards with the aim to make a quick and visual analysis from our database. 
+
+The files are located in the TABLEAU folder.
+
+In order to stablish the connection with the database we could use the MYSQL driver avaliable at the tableau website or directly import the data from the ".csv" files provided as well in that folder.

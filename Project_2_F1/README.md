@@ -34,7 +34,7 @@ Follow this steps in order to run the project on your local enviroment.
 ### Run the code:
 Once you have finisshed the setup you will be able to run the pipeline and populate the databse.
 
-##Tableau:
+## Tableau:
 We also developed 5 dashboards with the aim to make a quick and visual analysis from our database. 
 
 The files are located in the TABLEAU folder.
